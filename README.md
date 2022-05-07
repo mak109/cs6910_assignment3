@@ -19,3 +19,50 @@ To run he Jupter Notebook files download the files and run all the cells in sequ
 Download all the files and run all the cells sequentially. We recommend to run the files in Google Colab. For the cs6910_assignment3_viz.ipynb file, we recommed to use Kaggle to get the required results because of better GPU in Kaggle as compared to Google Colab.
 
 
+## Hyperparameters and sweep configs
+
+Following is the hyperparameters for cs6910_assignment3.ipynb
+``
+sweep_config_1 = {
+    'name': 'RNN',
+    'method': 'bayes',                   # Possible search : grid, random, bayes
+    'metric': {
+      'name': 'val_accuracy',
+      'goal': 'maximize'   
+    },
+    'parameters': {
+        'learning_rate':{
+            'values':[1e-3,1e-4]
+        },
+        'optimizer':{
+            'values':['rmsprop','adam','nadam']
+        },
+        'loss_function':{
+          'value':'categorical_crossentropy' 
+        },
+        'input_embedding_size': {
+            'values': [32, 64, 256]
+        },
+        'num_enc_layers': {
+            'values': [1, 2, 3]
+        },
+        'num_dec_layers': {
+            'values': [1, 2, 3]
+        },
+        'hidden_layer_size': {
+            'values': [32, 64, 256]
+        },
+        'cell_type': {
+            'values': ['RNN', 'LSTM', 'GRU']
+        },
+        'dropout' :{
+            'values': [0, 0.25, 0.3,0.4]
+        },
+        'beam_width': {
+            'values': [1, 5]
+        }
+    }
+}
+
+``
+
