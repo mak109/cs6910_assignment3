@@ -31,10 +31,22 @@ To run he Jupter Notebook files download the files and run all the cells in sequ
 First download all the py files in your local system. Make sure you have all the dependencies required for running the code. 
 
 Use the following codes to run the code :
-1. For running the cs6910_assignment3.py file `pyton3 cs6910_assignment3.py`
-2. For running the cs6910_assignment3_attention.py file `python3 cs6910_assignment3_attention.py`
-3. For running the cs6910_assignment3_gpt.py file ``python3 cs6910_assignment3_gpt.py`
-4. For running the cs6910_assignment3_viz.py file ``python3 cs6910_assignment3_viz.py`
+For running the cs6910_assignment3.py file 
+``` 
+pyton3 cs6910_assignment3.py
+```
+For running the cs6910_assignment3_attention.py file 
+```
+python3 cs6910_assignment3_attention.py
+```
+For running the cs6910_assignment3_gpt.py file 
+```
+python3 cs6910_assignment3_gpt.py
+```
+For running the cs6910_assignment3_viz.py file 
+```
+python3 cs6910_assignment3_viz.py
+```
 
 
 
