@@ -66,3 +66,58 @@ sweep_config_1 = {
 
 ```
 
+Following is the hyperparameters for cs6910_assignment3_attention.ipynb
+```
+sweep_config_1 = {
+    'name': 'RNNs2s_attn',
+    'method': 'bayes',                   # Possible search : grid, random, bayes
+    'metric': {
+      'name': 'val_accuracy',
+      'goal': 'maximize'   
+    },
+    'parameters': {
+        'epochs':{
+            'values':[10,15,20]
+        },
+        'learning_rate':{
+            'values':[0.001,0.0001,0.005]
+        },
+        'optimizer':{
+            'value':'adam'
+        },
+        'loss_function':{
+          'value':'categorical_crossentropy'  
+        },
+        'input_embedding_size': {
+            'values': [64,128,256]
+        },
+        'num_enc_layers': {
+            'values': [2,3]
+        },
+        'num_dec_layers': {
+            'values': [3,5]
+        },
+        'hidden_layer_size': {
+            'values': [256,512,768]
+        },
+        'cell_type': {
+            'values': ['GRU']
+        },
+        'dropout' :{
+            'values': [0.20,0.30]
+        },
+        'r_dropout': {
+            'values': [0.20,0.30]
+        },
+        'beam_width': {
+            'values': [1,3,5]
+        },
+        'batch_size':{
+            'values':[128,256]
+        }
+    }
+}
+```
+
+
+
