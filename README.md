@@ -16,7 +16,8 @@ To run the Jupyter notebook files use the following steps :
 ### Jupyter Notebook
 To run he Jupter Notebook files download the files and run all the cells in sequential order. We recommend to use Google Colab for using the ipynb files so that there is no dependencies error. 
 
-Download all the files and run all the cells sequentially. We recommend to run the files in Google Colab. For the cs6910_assignment3_viz.ipynb file, we recommed to use Kaggle to get the required results because of better GPU in Kaggle as compared to Google Colab.
+Download all the files and run all the cells sequentially. We recommend to run the files in Google Colab. For the cs6910_assignment3_viz.ipynb file, we recommed to use Kaggle to get the required results because of better GPU in Kaggle as compared to Google Colab.Kaggle provides **Nvidia Tesla P100** and 
+also provides better runtime with larger quota.
 
 
 ## Hyperparameters and sweep configs
