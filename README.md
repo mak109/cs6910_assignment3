@@ -1,4 +1,4 @@
-# cs6910_assignment3
+# CS6910 ASSIGNMENT 3
 
 ## Contents
 1. cs6910_assignment3.ipynb : Contans the entire code for the assignment.
