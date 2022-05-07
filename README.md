@@ -22,7 +22,7 @@ Download all the files and run all the cells sequentially. We recommend to run t
 ## Hyperparameters and sweep configs
 
 Following is the hyperparameters for cs6910_assignment3.ipynb
-``
+```
 sweep_config_1 = {
     'name': 'RNN',
     'method': 'bayes',                   # Possible search : grid, random, bayes
@@ -64,5 +64,5 @@ sweep_config_1 = {
     }
 }
 
-``
+```
 
