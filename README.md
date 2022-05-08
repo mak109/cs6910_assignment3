@@ -23,7 +23,7 @@ also provides better runtime with larger quota.
 ## Hyperparameters and sweep configs
 
 Following is the hyperparameters for cs6910_assignment3.ipynb
-```
+```python
 sweep_config_1 = {
     'name': 'RNN',
     'method': 'bayes',                   # Possible search : grid, random, bayes
@@ -75,7 +75,7 @@ sweep_config_1 = {
 ```
 
 Following is the hyperparameters for cs6910_assignment3_attention.ipynb
-```
+```python
 sweep_config_1 = {
     'name': 'RNNs2s_attn',
     'method': 'bayes',                   # Possible search : grid, random, bayes
