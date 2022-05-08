@@ -1,5 +1,11 @@
 # CS6910 ASSIGNMENT 3
 
+Assignment 3 of the CS6910: Fundamentals of Deep Learning Course by Dr. Mitesh Khapra
+
+Project Contributors
+- Mayukh Das(CS21S064)
+- Amartya Basu(CS21S063)
+
 ## Contents
 
 ### Jupyter Notebook files
@@ -162,3 +168,16 @@ config = {
     }
 ```
 
+## References
+
+1) [Deep Learning lectures by Professor Mitesh Khapra, IIT Madras.](https://youtube.com/playlist?list=PLEAYkSg4uSQ1r-2XrJ_GBzzS6I-f8yfRU)
+2) [https://www.tensorflow.org](https://www.tensorflow.org)
+3) [https://towardsdatascience.com/how-to-visually-explain-any-cnn-based-models-80e0975ce57](https://towardsdatascience.com/how-to-visually-explain-any-cnn-based-models-80e0975ce57)
+4) [https://huggingface.co](https://huggingface.co)
+5) [https://towardsdatascience.com/natural-language-generation-part-2-gpt-2-and-huggingface-f3acb35bc86a](https://towardsdatascience.com/natural-language-generation-part-2-gpt-2-and-huggingface-f3acb35bc86a)
+6) [https://distill.pub/2019/memorization-in-rnns/#appendix-autocomplete](https://distill.pub/2019/memorization-in-rnns/#appendix-autocomplete)
+7) [https://towardsdatascience.com/visualising-lstm-activations-in-keras-b50206da96ff](https://towardsdatascience.com/visualising-lstm-activations-in-keras-b50206da96ff)
+
+## License
+
+The code in this project is made by Amartya and Mayukh.
