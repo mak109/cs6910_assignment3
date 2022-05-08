@@ -33,16 +33,20 @@ sweep_config_1 = {
     },
     'parameters': {
         'learning_rate':{
-            'values':[1e-3,1e-4]
+            'values':[1e-3,1e-4,5e-3]
+        },
+        'epochs':
+        {
+         'values':[10,25,20]
         },
         'optimizer':{
-            'values':['rmsprop','adam','nadam']
+            'values':['rmsprop','adam','nadam','sgd','momentum']
         },
         'loss_function':{
           'value':'categorical_crossentropy' 
         },
         'input_embedding_size': {
-            'values': [32, 64, 256]
+            'values': [64,128, 256,512]
         },
         'num_enc_layers': {
             'values': [1, 2, 3]
@@ -51,7 +55,7 @@ sweep_config_1 = {
             'values': [1, 2, 3]
         },
         'hidden_layer_size': {
-            'values': [32, 64, 256]
+            'values': [128,256,512,768]
         },
         'cell_type': {
             'values': ['RNN', 'LSTM', 'GRU']
@@ -59,8 +63,11 @@ sweep_config_1 = {
         'dropout' :{
             'values': [0, 0.25, 0.3,0.4]
         },
+        'r_dropout':{
+          'values': [0.0,0.20,0.30]  
+        },
         'beam_width': {
-            'values': [1, 5]
+            'values': [1, 3,5]
         }
     }
 }
@@ -77,48 +84,81 @@ sweep_config_1 = {
       'goal': 'maximize'   
     },
     'parameters': {
-        'epochs':{
-            'values':[10,15,20]
-        },
         'learning_rate':{
-            'values':[0.001,0.0001,0.005]
+            'values':[1e-3,1e-4,5e-3]
+        },
+        'epochs':
+        {
+         'values':[10,25,20]
         },
         'optimizer':{
-            'value':'adam'
+            'values':['rmsprop','adam','nadam','sgd','momentum']
         },
         'loss_function':{
-          'value':'categorical_crossentropy'  
+          'value':'categorical_crossentropy' 
         },
         'input_embedding_size': {
-            'values': [64,128,256]
+            'values': [64,128, 256,512]
         },
         'num_enc_layers': {
-            'values': [2,3]
+            'values': [1, 2, 3]
         },
         'num_dec_layers': {
-            'values': [3,5]
+            'values': [1, 2, 3]
         },
         'hidden_layer_size': {
-            'values': [256,512,768]
+            'values': [128,256,512,768]
         },
         'cell_type': {
-            'values': ['GRU']
+            'values': ['RNN', 'LSTM', 'GRU']
         },
         'dropout' :{
-            'values': [0.20,0.30]
+            'values': [0, 0.25, 0.3,0.4]
         },
-        'r_dropout': {
-            'values': [0.20,0.30]
+        'r_dropout':{
+          'values': [0.0,0.20,0.30]  
         },
         'beam_width': {
-            'values': [1,3,5]
-        },
-        'batch_size':{
-            'values':[128,256]
+            'values': [1, 3,5]
         }
     }
 }
 ```
+Following is the hyperparameters which gives the best word level and character level accuracy for vanilla model is
 
-
+```python
+config = {
+    batch_size: 256
+    beam_width: 3
+    cell_type: 'GRU'
+    dropout: 0.3
+    epochs: 10
+    hidden_layer_size: 256
+    input_embedding_size: 256
+    learning_rate: 0.001
+    loss_function: 'categorical_crossentropy'
+    num_dec_layers: 3
+    num_enc_layers: 2
+    optimizer: 'adam'
+    r_dropout: 0.3
+    }
+```
+Following is the hyperparameters which gives the best word level and character level accuracy for attention based model is
+```python
+config = {
+    batch_size: 256
+    beam_width: 3
+    cell_type: 'GRU'
+    dropout: 0.2
+    epochs: 20
+    hidden_layer_size: 768
+    input_embedding_size: 128
+    learning_rate: 0.001
+    loss_function: 'categorical_crossentropy'
+    num_dec_layers: 5
+    num_enc_layers: 3
+    optimizer: 'adam'
+    r_dropout: 0.2
+    }
+```
 
