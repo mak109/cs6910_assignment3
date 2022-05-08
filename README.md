@@ -167,6 +167,8 @@ config = {
     r_dropout: 0.2
     }
 ```
+## Link for Wandb report
+[CS6910 Assignmnet 3](https://wandb.ai/dlstack/cs6910_assignment_3/reports/CS6910-Assignment-3--VmlldzoxOTY3MDg2?accessToken=tk7sfj04r73t2gfjjnfmzts7s9h5qqk8v85oo9cl1ix09d9mqsozvz8epkufuiwv)
 
 ## References
 
