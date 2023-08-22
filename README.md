@@ -1,4 +1,4 @@
-# CS6910 ASSIGNMENT 3
+# English to Bengali Transliteration
 
 Assignment 3 of the CS6910: Fundamentals of Deep Learning Course by Dr. Mitesh Khapra
 
