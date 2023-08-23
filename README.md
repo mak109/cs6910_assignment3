@@ -185,4 +185,4 @@ config = {
 
 ## License
 
-The code in this project is made by Amartya and Mayukh.
+The code in this project is made by Mayukh and Amartya.
