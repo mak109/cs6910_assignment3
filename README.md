@@ -1,5 +1,7 @@
 # English to Bengali Transliteration
 
+Developed a sequence to sequence model using LSTM,GRU,RNN that converts a given romanized english word or translit-
+erate to the native word ( bengali in my case).
 Assignment 3 of the CS6910: Fundamentals of Deep Learning Course by Dr. Mitesh Khapra
 
 Project Contributors
